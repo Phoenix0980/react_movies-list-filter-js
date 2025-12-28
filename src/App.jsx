@@ -7,8 +7,8 @@ import moviesFromServer from './api/movies.json';
 export const App = () => {
   const [query, setQuery] = useState('');
 
-  const handleChange = e => {
-    setQuery(e.target.value);
+  const handleChange = event => {
+    setQuery(event.target.value);
   };
 
   const normalizedQuery = query.trim().toLowerCase();
